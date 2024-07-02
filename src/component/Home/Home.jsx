@@ -441,7 +441,7 @@ const fadeInVariant = {
 
 		
   
-		<AnimatedSection>
+		{/* <AnimatedSection>
 		  <div className="about-detail-card">
 			<motion.div
 			  variants={fadeInVariant}
@@ -478,7 +478,7 @@ const fadeInVariant = {
 			  <p className="list-item">5. Strengthen Bonds</p>
 			</motion.div>
 		  </div>
-		</AnimatedSection>
+		</AnimatedSection> */}
   
 		<AnimatedHeading>Our Process</AnimatedHeading>
   
