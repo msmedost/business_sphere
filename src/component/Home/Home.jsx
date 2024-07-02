@@ -404,7 +404,7 @@ const fadeInVariant = {
 		  </div>
 		</Slider>
   
-		<AnimatedHeading>About Business Sphere</AnimatedHeading>
+		{/* <AnimatedHeading>About Business Sphere</AnimatedHeading> */}
   
 		<div><Listedmember /></div>
 
