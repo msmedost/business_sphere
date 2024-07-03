@@ -42,18 +42,12 @@ body{
 }
 .profile{
   margin-bottom: 1rem;
-}
-
-
-.profile .img{
-  height: 90px;
+  height: 100px;
   width: 100px;
   border-radius: 50%;
-  padding: 5px;
-  display: flex;
-  background: #ffffff;
-  box-shadow: 0 8px 24px #00000031;
+  overflow: hidden;
 }
+
 
 .profile .img img{
   width: 100%;

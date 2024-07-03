@@ -3,6 +3,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './testimonial.css';
+import { useMediaQuery } from 'react-responsive';
+import { FaCircleArrowRight } from "react-icons/fa6";
 
 const testimonials = [
   {
@@ -19,66 +21,76 @@ const testimonials = [
   }
 ];
 
-
 const TestimonialSlider = () => {
+
+  const isMobile = useMediaQuery({ maxWidth: 850 });
+
+  function PrevArrow(props) {
+    const {  onClick } = props;
+    return (
+      <div className='flex items-center h-full text-5xl sm:text-2xl absolute -left-20 z-10 sm:-left-8'
+      onClick={onClick}
+      ><div className=' inline-block text-indigo-900'>
+        <FaCircleArrowRight className=' rotate-180'/>
+      </div>
+      </div>
+    );
+  }
+
+
+  
+  function NextArrow(props) {
+    const {  onClick } = props;
+    return (
+      <div className='flex items-center h-full text-5xl sm:text-2xl absolute -right-20 top-0 z-10 sm:-right-10'
+        onClick={onClick}
+      ><div className=' inline-block text-indigo-900'>
+        <FaCircleArrowRight/>
+      </div>
+      </div>
+    );
+  }
   var settings = {
-    dots: true,
     infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
+    speed: 1000,
+    slidesToShow: isMobile ? 1 : 2,
+    slidesToScroll: isMobile ? 1 : 2,
+    initialSlide: 0,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    draggable: true,
+    pauseOnHover: true,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />
   };
 
   return (
-    <>
-      <div className="cards">
-        <div className="outer">
-          <div className="card" style={{ '--delay': '-1' }}>
-            <div className="header">
-              <div className="profile">
-                <div className="img">
-                  <img src="https://businesssphere.info/uploads/testimonial/8367771856983015.png" />
-                </div>
+    <div className=' w-full flex justify-center items-center'>
+      <div className=" w-3/4 mt-8">
+      <Slider {...settings}>
+        {testimonials.map((testimonial, index) => (
+          <div key={index} className=' p-4 sm:p-2'>
+            <div className=' bg-white shadow-lg rounded-lg w-[35vw] lg2:w-full min-h-[36vh] 2xl:min-h-[40vh] xl2:min-h-[45vh] p-8 text-[max(0.8vw,13px)]'>
+      
+      
+              <div className="profile ">
+                  <img src={testimonial.image} alt={testimonial.author} />
               </div>
               <div className="testimonial">
-                <p> My name is Sanjay Kumar Jha, founder of MSME DOST and SIMPLIFIED. We are into Website,
-                  Software and Technology aspect of compliances. We have got a few clients from this contact
-                  sphere and also a few solutions and
-                  services I am availing from members of Business Sphere. This is really useful and helpful.
-                </p>
+                <p>{testimonial.quote}</p>
                 <div className='name-position-container'>
-                  <h4 className='sanjay'>-Sanjay Jha</h4>
-                  <p className='sanjay-text'>MSMEDOST and Simplified Management Solutions</p>
+                  <h4 className=' text-xl font-bold'>{testimonial.author}</h4>
+                  <p className='position'>{testimonial.position}</p>
                 </div>
               </div>
             </div>
           </div>
-          <div className="card" style={{ '--delay': '0' }}>
-            <div className="header">
-              <div className="profile">
-                <div className="img">
-                  <img src="https://businesssphere.info/uploads/testimonial/804084144243608.jpg" />
-                </div>
-              </div>
-              <div className="testimonial">
-                <p> I am Shubham Jain from S.P. Hosiery and I am satisfied with this forum. I have got Business connects and referrals and got few Businesses too. Thanks to the member of the forum and I am happy with forums activities.
-                </p>
-                <div className='name-position-container'>
-                  <h4 className='sanjay'>-Shubham Jain</h4>
-                  <p className='sanjay-text'>S.P. Jain Hosiery</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
+        ))}
+      </Slider>
         </div>
-      </div>
-    </>
+    </div>
+      
   );
 };
 
-
-export default TestimonialSlider
-
-
-
+export default TestimonialSlider;
