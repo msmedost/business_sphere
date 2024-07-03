@@ -12,36 +12,36 @@ function RegisteredBusinesses() {
     <div className=' flex flex-col w-full bg-gradient-to-r from-purple-200 via-blue-200 to-cyan-200 py-6 justify-center'>
       <div className=' my-5'>
         <h1 className=' text-center mb-4 underline text-xl'>Nature of Business</h1>
-        <div className=' flex justify-center flex-wrap gap-5 px-4 mb-5'>
-          <div className=' w-60 bg-sky-100 h-fit flex justify-center items-center flex-col rounded-md p-4 shadow-xl'>
+        <div className=' flex justify-center gap-5 px-4 mb-5 md:flex-wrap'>
+          <div className=' w-[max(13rem,13vw)] bg-sky-100 h-fit flex justify-center items-center flex-col rounded-md p-4 shadow-xl'>
               <img className=' w-10' src={manufacturer} alt="" />
             <h3 className=' text-lg mt-2'>Manufacturer</h3>
             <div className=' flex text-3xl overflow-hidden gap-1'>
                 <CountUp start={0} end={11} duration={5} enableScrollSpy={true} scrollSpyOnce={true}  delay={1}></CountUp>+
             </div>
           </div>
-          <div className=' w-60 bg-sky-100 h-fit flex justify-center items-center flex-col rounded-md p-4 shadow-xl'>
+          <div className=' w-[max(13rem,13vw)] bg-sky-100 h-fit flex justify-center items-center flex-col rounded-md p-4 shadow-xl'>
                <img className=' w-10' src={service} alt="" />
             <h3 className=' text-lg mt-2'>Services</h3>
             <div className=' flex text-3xl overflow-hidden gap-1'>
                 <CountUp start={0} end={10} duration={5} enableScrollSpy={true} scrollSpyOnce={true}  delay={1}></CountUp>+
             </div>
           </div>
-          <div className=' w-60 bg-sky-100 h-fit flex justify-center items-center flex-col rounded-md p-4 shadow-xl'>
+          <div className=' w-[max(13rem,13vw)] bg-sky-100 h-fit flex justify-center items-center flex-col rounded-md p-4 shadow-xl'>
                <img className=' w-10' src={retail} alt="" />
             <h3 className=' text-lg mt-2'>Retail</h3>
             <div className=' flex text-3xl overflow-hidden gap-1'>
                 <CountUp start={0} end={3}  duration={5} enableScrollSpy={true} scrollSpyOnce={true} delay={1}></CountUp>+
             </div>
           </div>
-          <div className=' w-60 bg-sky-100 h-fit flex justify-center items-center flex-col rounded-md p-4 shadow-xl'>
+          <div className=' w-[max(13rem,13vw)] bg-sky-100 h-fit flex justify-center items-center flex-col rounded-md p-4 shadow-xl'>
                <img className=' w-10' src={professional} alt="" />
             <h3 className=' text-lg mt-2'>Professional</h3>
             <div className=' flex text-3xl overflow-hidden gap-1'>
                 <CountUp start={0} end={10} duration={5} enableScrollSpy={true} scrollSpyOnce={true}  delay={1}></CountUp>+
             </div>
           </div>
-          <div className=' w-60 bg-sky-100 h-fit flex justify-center items-center flex-col rounded-md p-4 shadow-xl'>
+          <div className=' w-[max(13rem,13vw)] bg-sky-100 h-fit flex justify-center items-center flex-col rounded-md p-4 shadow-xl'>
                <img className=' w-10' src={others} alt="" />
             <h3 className=' text-lg mt-2'>Others</h3>
             <div className=' flex text-3xl overflow-hidden gap-1'>
@@ -110,6 +110,13 @@ function RegisteredBusinesses() {
             <h3 className=' text-3xl mt-2 absolute text-white top-9'>O-</h3>
             <div className=' flex text-3xl overflow-hidden gap-1'>
                 <CountUp start={0} end={1} duration={5} enableScrollSpy={true} scrollSpyOnce={true}  delay={1}></CountUp>+
+            </div>
+          </div>
+          <div className=' w-40 bg-sky-100 h-fit flex justify-center items-center flex-col rounded-md p-4 shadow-xl relative'>
+              <img className=' w-20 ' src={blood} alt="" />
+            <h3 className=' text-3xl mt-2 absolute text-white top-9'>NA</h3>
+            <div className=' flex text-3xl overflow-hidden gap-1'>
+                <CountUp start={0} end={0} duration={5} enableScrollSpy={true} scrollSpyOnce={true}  delay={1}></CountUp>+
             </div>
           </div>
           
