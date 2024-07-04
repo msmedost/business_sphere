@@ -312,13 +312,13 @@ import SupportingBrands from "../SupportingBrands/SupportingBrands.jsx";
 import RegisteredBusinesses from "../RegisteredBusinesses/RegisteredBusinesses.jsx";
 
 const fadeInVariant = {
-  hidden: { opacity: 0, y: 50 }, // Start from opacity 0 and 50px below final position
+  hidden: { opacity: 0, y: 50 }, 
   show: {
     opacity: 1,
-    y: 0, // Move to final position
+    y: 0, 
     transition: {
       duration: 0.5,
-      ease: "easeOut", // Smooth easing for slide up effect
+      ease: "easeOut",
     },
   },
 };

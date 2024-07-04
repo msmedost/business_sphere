@@ -92,6 +92,53 @@ body{
 	}
 }
 .span-element{
-	font-weight: bold;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-weight: 600;
 }
+
+
+
+
+
+
+.heading-style {
+	background: rgb(35, 1, 44);
+	display: flex;
+	color: white;
+	padding: 20px 0;
+  }
+  .heading-style + .heading-style {
+	color: pink;
+  }
+  .heading-style + .heading-style + .heading-style {
+	color: gold;
+  }
+  .heading-style:before,
+  .heading-style:after {
+	content: '';
+	margin: auto 1em;
+	border-bottom: solid 1px;
+	flex: 1;
+  }
+  .heading-style h1 {
+	position: relative;
+	padding: 0.25em 1em;
+	overflow: hidden;
+	background: linear-gradient(currentcolor, currentcolor) no-repeat top center, linear-gradient(currentcolor, currentcolor) no-repeat bottom center;
+	background-size: calc(100% - 1.65em) 1px;
+  }
+  .heading-style h1:before,
+  .heading-style h1:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	border: solid 2px;
+	border-top: none;
+	border-bottom: none;
+	transform: skew(45deg)
+  }
+  .heading-style h1:after {
+	transform: skew(-45deg)
+  }
