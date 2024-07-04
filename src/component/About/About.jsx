@@ -36,9 +36,9 @@ function About() {
         <div className=" absolute flex justify-center gap-4 w-full px-8 top-[90%]  text-center">
           <div
             onClick={() => setSelectedDiv("first")}
-            className={` w-48 flex p-4 gap-2 items-center flex-col rounded-lg font-bold h-34 shadow-lg  border-gray-200 border-2 hover:bg-white cursor-pointer transition-all duration-300 ${
+            className={` w-48 flex p-4 gap-2 items-center flex-col rounded-lg font-bold h-34 shadow-lg  border-gray-200 border-2   cursor-pointer transition-all duration-300 ${
               selectedDiv === "first"
-                ? "bg-orange-500 text-white hover:bg-orange-600"
+                ? "bg-orange-500 text-white  "
                 : " bg-gray-100"
             }`}
           >
@@ -49,9 +49,9 @@ function About() {
           </div>
           <div
             onClick={() => setSelectedDiv("second")}
-            className={` w-48 flex p-4 gap-2 items-center flex-col rounded-lg font-bold h-34 shadow-lg  border-gray-200 border-2 hover:bg-white cursor-pointer transition-all duration-300 ${
+            className={` w-48 flex p-4 gap-2 items-center flex-col rounded-lg font-bold h-34 shadow-lg  border-gray-200 border-2   cursor-pointer transition-all duration-300 ${
               selectedDiv === "second"
-                ? "bg-orange-500 text-white hover:bg-orange-600"
+                ? "bg-orange-500 text-white  "
                 : " bg-gray-100"
             }`}
           >
@@ -62,9 +62,9 @@ function About() {
           </div>
           <div
             onClick={() => setSelectedDiv("third")}
-            className={` w-48 flex p-4 gap-2 items-center flex-col rounded-lg font-bold h-34 shadow-lg border-gray-200 border-2 hover:bg-white cursor-pointer transition-all duration-300 ${
+            className={` w-48 flex p-4 gap-2 items-center flex-col rounded-lg font-bold h-34 shadow-lg border-gray-200 border-2   cursor-pointer transition-all duration-300 ${
               selectedDiv === "third"
-                ? "bg-orange-500 text-white hover:bg-orange-600"
+                ? "bg-orange-500 text-white  "
                 : " bg-gray-100"
             }`}
           >
@@ -75,9 +75,9 @@ function About() {
           </div>
           <div
             onClick={() => setSelectedDiv("fourth")}
-            className={` w-48 flex p-4 gap-2 items-center flex-col rounded-lg font-bold h-34 shadow-lg  border-gray-200 border-2 hover:bg-white cursor-pointer transition-all duration-300 ${
+            className={` w-48 flex p-4 gap-2 items-center flex-col rounded-lg font-bold h-34 shadow-lg  border-gray-200 border-2   cursor-pointer transition-all duration-300 ${
               selectedDiv === "fourth"
-                ? "bg-orange-500 text-white hover:bg-orange-600"
+                ? "bg-orange-500 text-white  "
                 : " bg-gray-100"
             }`}
           >
@@ -88,9 +88,9 @@ function About() {
           </div>
           <div
             onClick={() => setSelectedDiv("fifth")}
-            className={`w-48 flex p-4 gap-2 items-center flex-col rounded-lg font-bold h-34 shadow-lg border-gray-200 border-2 hover:bg-white cursor-pointer transition-all duration-300 ${
+            className={`w-48 flex p-4 gap-2 items-center flex-col rounded-lg font-bold h-34 shadow-lg border-gray-200 border-2   cursor-pointer transition-all duration-300 ${
               selectedDiv === "fifth"
-                ? "bg-orange-500 text-white hover:bg-orange-600"
+                ? "bg-orange-500 text-white  "
                 : " bg-gray-100"
             }`}
           >
@@ -101,9 +101,9 @@ function About() {
           </div>
           <div
             onClick={() => setSelectedDiv("sixth")}
-            className={`w-48 flex p-4 gap-2 items-center flex-col rounded-lg font-bold h-34 shadow-lg  border-gray-200 border-2 hover:bg-white cursor-pointer transition-all duration-300 ${
+            className={`w-48 flex p-4 gap-2 items-center flex-col rounded-lg font-bold h-34 shadow-lg  border-gray-200 border-2   cursor-pointer transition-all duration-300 ${
               selectedDiv === "sixth"
-                ? "bg-orange-500 text-white hover:bg-orange-600"
+                ? "bg-orange-500 text-white  "
                 : " bg-gray-100"
             }`}
           >
