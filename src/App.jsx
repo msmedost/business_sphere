@@ -10,6 +10,7 @@ import Faq from './component/Faq/Faq';
 import Listing from './component/Listing/Listing';
 import Directory from './component/Directory/Directory';
 import Listedetail from './component/Listedetail/Listedetail';
+import BirthDay from './component/BirthDay/BirthDay';
 
 
 
@@ -20,6 +21,7 @@ function App() {
 
       <Router>
         <Header />
+        <BirthDay/>
         <Routes>
 
           <Route path='/' element={<Home />} />
