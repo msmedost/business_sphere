@@ -4,8 +4,11 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 import { FaLocationDot } from "react-icons/fa6";
 import { Link } from 'react-router-dom'
+import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 
 function Footer() {
+	const currentYear = new Date().getFullYear();
+
 	return (
 		<footer className="footer">
 		<div className="footer-container">
@@ -19,16 +22,13 @@ function Footer() {
 			<h4 className='h4-heading mobile-view-margin'>Useful Links</h4>
 			<div className='footer-items'>
 			<ul className='mobile-view-margin'>
-			  <li><Link to="/" className='fotter-link-item'>Home</Link></li>
-			  <li><Link to="/about" className='fotter-link-item'>About</Link></li>
-			  <li><Link to="/directory" className='fotter-link-item'>Directory</Link></li>
-			  <li><Link to="/contact" className='fotter-link-item'>Contact us</Link></li>
-			</ul>
-			<ul className='secound-item-container mobile-view-margin'>
-			  <li><Link to="/faq" className='fotter-link-item'>FAQ</Link></li>
-			  <li><Link to="/listing" className='fotter-link-item'>Listing Form</Link></li>
-			  <li><Link to="/about" className='fotter-link-item'>Our Process</Link></li>
-			  <li><Link to="/about" className='fotter-link-item'>Why Choose Us</Link></li>
+			  <li><Link to="/" className='fotter-link-item'><MdKeyboardDoubleArrowRight />Home</Link></li>
+			  <li><Link to="/about" className='fotter-link-item'><MdKeyboardDoubleArrowRight />About</Link></li>
+			  <li><Link to="/directory" className='fotter-link-item'><MdKeyboardDoubleArrowRight />Directory</Link></li>
+			  <li><Link to="/contact" className='fotter-link-item'><MdKeyboardDoubleArrowRight />Contact us</Link></li>
+
+			  <li><Link to="/faq" className='fotter-link-item'><MdKeyboardDoubleArrowRight />FAQ</Link></li>
+			  <li><Link to="/listing" className='fotter-link-item'><MdKeyboardDoubleArrowRight />Listing Form</Link></li>
 			</ul>
 			</div>
 		  </div>
@@ -40,7 +40,7 @@ function Footer() {
 		  </div>
 		</div>
 		<div className="footer-bottom">
-		  <p className='copy-right-text'>&copy; 2023-2024 BUSINESS SPHERE. DESIGNED BY MSMEDOST</p>
+		  <p className='copy-right-text'>&copy; {currentYear-1}-{currentYear} BUSINESS SPHERE. DESIGNED BY <span className=' text-blue-900'><a target='_blank' href="https://msmedost.netlify.app/">MSMEDOST</a></span></p>
 		</div>
 	  </footer>
 	)

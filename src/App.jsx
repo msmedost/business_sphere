@@ -1,5 +1,5 @@
-import React from 'react'
-import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
+import React, { useEffect } from 'react'
+import { Route, BrowserRouter as Router, Routes, useLocation } from 'react-router-dom'
 import './App.css'
 import Header from './component/Header/Header'
   ; import Home from './component/Home/Home';
@@ -15,11 +15,23 @@ import Listedetail from './component/Listedetail/Listedetail';
 
 
 function App() {
+
+
+  function ScrollToTop() {
+    const { pathname } = useLocation();
+  
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [pathname]);
+  
+    return null; 
+  }
   return (
     <>
 
       <Router>
         <Header />
+        <ScrollToTop/>
         
         <Routes>
 
