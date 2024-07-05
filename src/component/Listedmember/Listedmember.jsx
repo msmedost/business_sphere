@@ -10,7 +10,7 @@ function Listedmember() {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        axios.get('https://business-sphere-backend.onrender.com/api/forms')
+        axios.get('https://business-sphere-backend.onrender.com/api/forms/getdata')
             .then(response => {
                 setUsers(response.data);
             })
