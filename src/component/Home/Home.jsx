@@ -310,6 +310,7 @@ import mission from "../../assets/MISSION.png";
 import choose from "../../assets/CHOOSE.png";
 import SupportingBrands from "../SupportingBrands/SupportingBrands.jsx";
 import RegisteredBusinesses from "../RegisteredBusinesses/RegisteredBusinesses.jsx";
+import BirthDay from "../BirthDay/BirthDay.jsx";
 
 const fadeInVariant = {
   hidden: { opacity: 0, y: 50 }, 
@@ -373,6 +374,7 @@ function Home() {
 
   return (
     <div>
+      <BirthDay/>
       <section>
         <Slider {...settings}>
           <div>
