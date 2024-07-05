@@ -27,7 +27,7 @@ const CardItem = (props) => {
         {showDetails && (
                     <div className=' w-screen h-screen top-0 left-0 fixed flex justify-center items-center bg-black bg-opacity-80 z-50'>
                         
-                        <div className="w-[20%] h-[70%] bg-white flex py-10 px-4 gap-4 items-center flex-col text-center relative">
+                        <div className="w-[20%] h-[70%] bg-white flex py-10 px-4 gap-4 items-center flex-col text-center relative lg2:w-[50%] sm:w-[80%]">
                         <div className=' absolute top-0 right-4 text-2xl cursor-pointer'onClick={()=>setShowDetails(false)}>x</div>
                         <img className=' w-40 rounded-lg' src={yourphoto} alt="" />
                         <h1>Name: {name}</h1>
