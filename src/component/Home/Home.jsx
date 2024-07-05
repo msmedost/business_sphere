@@ -401,6 +401,7 @@ function Home() {
         {/* <AnimatedHeading>About Business Sphere</AnimatedHeading> */}
 
         <div>
+          <h1 className=" text-center text-3xl py-4 font-bold">Business Directory</h1>
           <Listedmember />
         </div>
 

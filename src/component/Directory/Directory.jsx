@@ -17,14 +17,15 @@ function Directory() {
                     className="listing-form-img"
                 />
             </div>
-            <motion.h1
+            {/* <motion.h1
 
                 variants={fadeIn("up", 0.2)}
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.3 }}
 
-                className='listed-member'>Listed Members</motion.h1>
+                className='listed-member'>Listed Members</motion.h1> */}
+                <h1 className=' text-center text-2xl font-bold py-4'>Listed Members</h1>
             <Listedmember />
         </>
     );

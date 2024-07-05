@@ -9,7 +9,7 @@ function Listedetail() {
   const { id } = useParams();
 
   useEffect(() => {
-    axios.get(`http://localhost:5000/api/forms/${id}`)
+    axios.get(`https://business-sphere-backend.onrender.com/api/forms/${id}`)
       .then(response => {
         setUser(response.data);
       })
