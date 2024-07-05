@@ -180,68 +180,10 @@ body {
   margin-top: 30px;
 }
 
-.process-align-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
-@media screen and (max-width: 600px) {
-  .process-align-container {
-    align-items: center;
-  }
-}
 
-.one-process {
-  display: flex;
-}
 
-@media screen and (max-width: 600px) {
-  .one-process {
-    display: flex;
-    flex-direction: column;
-    margin-right: 22px;
-  }
-}
 
-.process-detail-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 45px;
-  padding-left: 45px;
-}
-
-@media screen and (max-width: 600px) {
-  .process-detail-card {
-    margin: 12px;
-    justify-content: left;
-    padding-left: 10px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .collaborate {
-    margin-top: 25px;
-  }
-}
-
-.apply-heading {
-  font-size: 15px;
-  font-family: sans-serif;
-  font-weight: bold;
-  margin-bottom: 30px;
-}
-
-@media screen and (max-width: 600px) {
-  .apply-heading {
-    max-width: 122px;
-    width: 122px;
-    margin-right: 20px;
-    text-align: center;
-  }
-}
 
 .com-logo-container {
   display: flex;
@@ -473,4 +415,112 @@ body {
   100% {
     left: 2px;
   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.process-align-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  .process-align-container {
+      flex-direction: column;
+      align-items: center;
+
+  }
+}
+
+.one-process {
+  display: flex;
+  gap: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  .one-process {
+      display: flex;
+      flex-direction: column;
+      margin-right: 22px;
+
+  }
+}
+
+.process-detail-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f6f7;
+  box-shadow: 0 0 20px black;
+  width: 245px;
+  height: 243px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+
+
+
+}
+@media screen and (max-width:1000px) {
+  .process-detail-card{
+      display: flex;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .process-detail-card {
+      margin: 12px;
+      justify-content: left;
+      padding-left: 10px;
+      width: 205px;
+      height: 200px;
+      padding: 14px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .collaborate {
+      margin-top: 25px;
+  }
+}
+
+
+.our-process-profile {
+  width: 222px;
+}
+
+.apply-heading {
+  font-size: 15px;
+  font-family: "Playwrite GB S", cursive;
+  font-weight: bold;
+  margin-top: 22px;
+}
+
+@media screen and (max-width: 600px) {
+  .apply-heading {
+      width: 172px;
+      margin-right: 20px;
+      text-align: center;
+      margin-top: 18px;
+
+  }
+}
+
+.process-text {
+  font-size: 15px;
+  font-family: "Playwrite GB S", cursive;
+  font-weight: bold;
+  margin-top: 22px;
 }
